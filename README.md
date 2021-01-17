@@ -9,23 +9,16 @@ The following tools need to be installed start using this theme:
 - [Hugo](https://gohugo.io/getting-started/quick-start/)
 - [git](https://git-scm.com/downloads)
 
-## Content authoring
+## Getting started
 
-### Presentation
-
-Run the following command at the root of your own repository to create a new presentation in Hugo's `content` directory:
+To create new workshop materials, you can just the [workshop-materials-template](https://github.com/experimental-software/workshop-materials-template):
 
 ```
-hugo new --kind presentation ${TOPIC}/${NAME}
+git clone --recurse https://github.com/experimental-software/workshop-materials-template.git ${PROJECT_NAME}
 ```
 
-### Tutorial
+For further usage instructions for the template, please refer to its [README](https://github.com/experimental-software/workshop-materials-template/blob/master/README.md) file.
 
-Run the following command at the root of your own repository to create a new presentation in Hugo's `content` directory:
-
-```
-hugo new --kind tutorial2 ${TOPIC}/${NAME}
-```
 
 ## Credits
 
