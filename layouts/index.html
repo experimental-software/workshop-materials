@@ -42,14 +42,15 @@
                 </div><!--//tagline-->
 
 	             <p></p>
-
-               <div>
-                 <a class="btn btn-primary btn-xl js-scroll-trigger"
-                   href="{{ .Params.PrimaryLinkHref }}"
-                   target="_blank">
-                     <i class="{{ .Params.PrimaryLinkIcon }}"></i> {{ .Params.PrimaryLinkText }}
-                 </a>
-               </div>
+               {{ if .Params.PrimaryLinkText }} 
+                 <div>
+                   <a class="btn btn-primary btn-xl js-scroll-trigger"
+                     href="{{ .Params.PrimaryLinkHref }}"
+                     target="_blank">
+                       <i class="{{ .Params.PrimaryLinkIcon }}"></i> {{ .Params.PrimaryLinkText }}
+                   </a>
+                 </div>
+               {{ end }}
             </div><!--//container-->
         </header><!--//header-->
 
