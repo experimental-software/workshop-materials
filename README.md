@@ -25,6 +25,7 @@ For further usage instructions for the template, please refer to its [README](ht
 - The layout of the start page and the subject list pages is applied from a Bootstrap template by [Xiaoying Riley](https://themes.3rdwavemedia.com/) which is licensed under Creative Commons Attribution 3.0 License.
 - The layout of the tutorial pages is inspired by [Google Codelabs](https://github.com/googlecodelabs/tools).
 - The presentations are based on [RevealJS](https://revealjs.com/) which is licensed under the [MIT license](https://github.com/hakimel/reveal.js/blob/master/LICENSE).
+- At various places of the website [Font Awesome](https://fontawesome.com/) icons are used.
 
 ## License
 
