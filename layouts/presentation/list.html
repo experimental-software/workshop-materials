@@ -4,13 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Some presentation</title>
+		<title>{{ .Title }}</title>
 
 		<link rel="stylesheet" href="{{ "reveal.js/dist/reset.css" | relURL }}">
 		<link rel="stylesheet" href="{{ "reveal.js/dist/reveal.css" | relURL }}">
-		<link rel="stylesheet" href="{{ "reveal.js/dist/theme/black.css" | relURL }}" id="theme">
-		
-		<script src="{{ "gitgraph.js" | relURL }}"></script>
+		<link rel="stylesheet" href="{{ ( printf "reveal.js/dist/theme/%s.css" (.Params.Theme | default "black") )  | relURL }}" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="{{ "reveal.js/plugin/highlight/monokai.css" | relURL }}" id="highlight-theme">
