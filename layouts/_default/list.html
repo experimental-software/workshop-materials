@@ -85,7 +85,9 @@
     <footer id="footer" class="footer text-center">
         <div class="container">
             <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+            <small class="copyright">
+            <a href="{{ "imprint" | relURL }}">Imprint</a> • 
+            Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
 
         </div><!--//container-->
     </footer><!--//footer-->
@@ -93,29 +95,3 @@
 </body>
 </html>
 
-
-<!-- <html>
-<head>
-  <title>List page</title>
-</head>
-<body>
-  <h1>Welcome to a default list page</h1>
-  {{ .Content}}
-    <ul>
-  {{ range .Pages }}
-  
-      {{ if eq .Kind "section" }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          
-          {{ if .Params.Teaser }}
-              - {{ .Params.Teaser }}
-          {{ end }}
-          
-        </li>
-      {{ end }}
-
-  {{ end }}
-      </ul>
-</body>
-</html> -->
