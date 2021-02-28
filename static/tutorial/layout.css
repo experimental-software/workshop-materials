@@ -119,6 +119,11 @@
   display: block;
 }
 
+#content img {
+  width:100%;
+  max-width: 800px;
+}
+
 .anchorContainer {
   margin-bottom: 96px;
 }
