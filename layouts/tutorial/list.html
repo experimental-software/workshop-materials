@@ -67,6 +67,12 @@
         </div>
     {{ end }}
   </div>
+  
+  <div id="contact">
+    {{ if .Site.Params.FeedbackLink }}
+      <a href="{{ .Site.Params.FeedbackLink }}" target="_blank">Feedback</a>
+    {{ end }}
+  </div>
 
   <script src="{{ "tutorial/toc.js" | relURL }}" type="application/javascript"></script>
 
