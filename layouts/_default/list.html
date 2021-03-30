@@ -54,24 +54,28 @@
                         <div class="content-inner">
                             <h1 class="doc-title"><i class="icon {{ .Params.Icon }}"></i> {{ .Title }}</h1>
 
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th scope="col" style="width:10%;">#</th>
-                                  <th scope="col">Topic</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                {{ $rowCounter := 0 }}
-                                {{ range .Pages }}
-                                  {{ $rowCounter = add $rowCounter 1 }}
+                            {{ .Content }}
+                            
+                            {{if gt (len .Pages) 0}}
+                              <table class="table">
+                                <thead>
                                   <tr>
-                                    <th scope="row">{{ $rowCounter }}</th>
-                                    <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+                                    <th scope="col" style="width:10%;">#</th>
+                                    <th scope="col">Topic</th>
                                   </tr>
-                                {{ end }}
-                              </tbody>
-                            </table>
+                                </thead>
+                                <tbody>
+                                  {{ $rowCounter := 0 }}
+                                  {{ range .Pages }}
+                                    {{ $rowCounter = add $rowCounter 1 }}
+                                    <tr>
+                                      <th scope="row">{{ $rowCounter }}</th>
+                                      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+                                    </tr>
+                                  {{ end }}
+                                </tbody>
+                              </table>
+                            {{ end }}
 
                             </div><!--//content-holder-inner-->
                         </div><!--//content-holder-->
@@ -94,4 +98,3 @@
 
 </body>
 </html>
-
