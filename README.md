@@ -11,13 +11,16 @@ The following tools need to be installed start using this theme:
 
 ## Getting started
 
-To create new workshop materials, you can use the [workshop-materials-template](https://github.com/experimental-software/workshop-materials-template):
+To create new workshop materials, you can use the [Workshop Materials template](https://github.com/experimental-software/workshop-materials-template):
 
 ```
-git clone --recurse https://github.com/experimental-software/workshop-materials-template.git ${PROJECT_NAME}
+PROJECT_NAME=your-project-here
+git clone --recurse \
+  git@github.com:experimental-software/workshop-materials-template.git \
+  $PROJECT_NAME
 ```
 
-For further usage instructions for the template, please refer to its [README](https://github.com/experimental-software/workshop-materials-template/blob/master/README.md) file.
+For further instructions on how to use the template, please refer to its [README](https://github.com/experimental-software/workshop-materials-template/blob/master/README.md) file.
 
 
 ## Credits
