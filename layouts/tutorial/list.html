@@ -43,11 +43,11 @@
         <div class="sectionStepper">
           <div class="d-flex justify-content-between">
             <div>
-              <button type="button" class="goToPreviousSection btn btn-secondary" onclick="goToPreviousSection()">Zurück</button>
+              <button type="button" class="goToPreviousSection btn btn-secondary" onclick="goToPreviousSection()">{{ i18n "tutorial.back" }}</button>
             </div>
             <div>
-              <a id="finish" class="btn btn-success float-right" href="{{ .Parent.RelPermalink }}">Fertig!</a>
-              <button type="button" class="goToNextSection btn btn-primary float-right" onclick="goToNextSection()">Weiter</button>
+              <a id="finish" class="btn btn-success float-right" href="{{ .Parent.RelPermalink }}">{{ i18n "tutorial.done" }}</a>
+              <button type="button" class="goToNextSection btn btn-primary float-right" onclick="goToNextSection()">{{ i18n "tutorial.continue" }}</button>
             </div>
           </div>
         </div>

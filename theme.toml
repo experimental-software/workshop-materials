@@ -9,6 +9,7 @@ homepage = "http://example.com/linux-training"
 tags = []
 features = []
 min_version = "0.41"
+defaultContentLanguage = "en"
 
 [author]
   name = ""
