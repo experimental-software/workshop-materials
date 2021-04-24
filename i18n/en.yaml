@@ -4,3 +4,9 @@
   translation: "Continue"
 - id: tutorial.done
   translation: "Done!"
+- id: callout.info
+  translation: "Info"
+- id: callout.tip
+  translation: "Tip"
+- id: callout.warning
+  translation: "Caution"
