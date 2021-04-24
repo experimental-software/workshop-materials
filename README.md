@@ -18,6 +18,11 @@ PROJECT_NAME=your-project-here
 git clone --recurse \
   git@github.com:experimental-software/workshop-materials-template.git \
   $PROJECT_NAME
+  
+cd $PROJECT_NAME
+git checkout --orphan master
+git add .
+git commit -m "Initial commit"
 ```
 
 For further instructions on how to use the template, please refer to its [README](https://github.com/experimental-software/workshop-materials-template/blob/master/README.md) file.
