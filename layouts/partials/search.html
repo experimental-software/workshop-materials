@@ -1,0 +1,62 @@
+
+<button id="openSearchButton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Search
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+
+          <div class="container d-flex justify-content-center">
+              <div class="card mt-5 p-4">
+                  <div class="input-group mb-3">
+                    <input id="searchInput" class="form-control" tabindex="0">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div id="fastSearch">
+                     <ul id="searchResults">
+                     </ul>
+                  </div>
+              </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<script src="{{ "/search/fuse.min.js" | relURL }}" ></script>
+<script src="{{ "/search/fastsearch.js" | relURL }}" ></script>
+
+<script>
+
+function loadSearch() {
+  fetchJSONFile("{{ "index.json" | relURL }}", function(data){
+
+    var options = { // fuse.js options; check fuse.js website for details
+      shouldSort: true,
+      location: 0,
+      distance: 100,
+      threshold: 0.4,
+      minMatchCharLength: 2,
+      keys: [
+        'title',
+        'permalink',
+        'summary'
+        ]
+    };
+    fuse = new Fuse(data, options); // build the index from the json file
+  });
+}
+
+loadSearch();
+
+</script>

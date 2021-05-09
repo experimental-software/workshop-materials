@@ -1,0 +1,8 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.Pages -}}
+    {{ if isset .Params "type" }}
+      {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "type" .Params.type "permalink" .Permalink "summary" .Params.summary) -}}
+    {{ end }}
+
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
