@@ -1,10 +1,10 @@
-# Getting started
+# Introduction
 
-## Dependencies
+## Motivation
 
 TBD
 
-## Create new project
+## Getting started
 
 TBD
 
