@@ -68,6 +68,29 @@ Run the following command to add a new presentation in Hugo's `content` director
 hugo new --kind presentation subject-two/my-presentation
 ```
 
+# Advanced
+
+The following section describes advanced, optional features.
+
+## Search
+
+THIS FEATURE IS NOT ACTUALLY SUPPORTED YET.
+
+Maybe there could be a search for the page contents.
+
+This needs to be enabled in the `config.toml` file like this:
+
+```
+enableSearch = true
+```
+
+Before the search is actually available a search index needs to be generated.
+To generate the search index, Python needs to be installed.
+
+```
+./theme/workshop-materials/tool/create_search_index.sh
+```
+
 # Imprint
 
 See [experimental-software.com](http://notes.experimental-software.com/Impressum.html)
