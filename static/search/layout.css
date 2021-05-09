@@ -5,3 +5,35 @@
   right: 0px;
   top: 0px;
 }
+
+
+
+#searchResults li {
+  background-color: #333;
+  border-bottom: 1px dotted #000;
+}
+#searchResults li .title {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#searchResults ul {
+    list-style: none;
+    padding-left: 0;
+}​
+
+#searchResults {
+  visibility: inherit;
+  display: inline-block;
+  width: 500px;
+}
+#searchResults a {
+  text-decoration: none !important;
+  
+}
+#searchResults a:hover, a:focus {
+  outline: 0;
+  background-color: #666;
+  color: #fff;
+}
