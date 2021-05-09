@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
+## Content authoring
 
-You can use the [editor on GitHub](https://github.com/experimental-software/workshop-materials/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Tutorials
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### Add a new tutorial
 
-### Markdown
+Run the following command to add a new presentation in Hugo's `content` directory:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+hugo new --kind tutorial subject-two/my-tutorial
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Content syntax
 
-### Jekyll Themes
+The presentations can be created using [Markdown](https://daringfireball.net/projects/markdown/) syntax.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/experimental-software/workshop-materials/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### Content syntax extensions
 
-### Support or Contact
+Along with the Markdown syntax, you can use the following custom [Hugo shortcodes](https://gohugo.io/content-management/shortcodes):
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+**Info callout box**
+
+```
+{{< info >}}
+Lorem [impsum](https://example.com) dolor sit amet.
+{{< /info >}}
+```
+
+**Tip callout box**
+
+```
+{{< tip >}}
+Lorem [impsum](https://example.com) dolor sit amet.
+{{< /tip >}}
+```
+
+**Warning callout box**
+
+```
+{{< warning >}}
+Lorem [impsum](https://example.com) dolor sit amet.
+{{< /warning >}}
+```
+
+### Presentations
+
+#### Presentation syntax
+
+The presentations can be created using plain HTML with the [reveal.js](https://revealjs.com/) syntax.
+
+#### Add a new presentation
+
+Run the following command to add a new presentation in Hugo's `content` directory:
+
+```
+hugo new --kind presentation subject-two/my-presentation
+```
+
+## Imprint
+
+See http://notes.experimental-software.com/Impressum.html
