@@ -7,36 +7,12 @@ var last = list.lastChild; // last child of search list
 var maininput = document.getElementById('searchInput'); // input box for search
 var resultsAvailable = false; // Did we get any search results?
 
-loadSearch();
-
 // ==========================================
 // The main keyboard event listener running the show
 //
 document.addEventListener('keydown', function(event) {
 
   console.log(event.keyCode);
-
-  // CMD-/ to show / hide Search
-  if (event.metaKey && event.which === 191) {
-      // Load json search index if first time invoking search
-      // Means we don't load json unless searches are going to happen; keep user payload small unless needed
-      if(firstRun) {
-        loadSearch(); // loads our json data and builds fuse.js search index
-        firstRun = false; // let's never do this again
-      }
-
-      // Toggle visibility of search box
-      if (!searchVisible) {
-        document.getElementById("fastSearch").style.visibility = "visible"; // show search box
-        document.getElementById("searchInput").focus(); // put focus in input box so you can just start typing
-        searchVisible = true; // search visible
-      }
-      else {
-        document.getElementById("fastSearch").style.visibility = "hidden"; // hide search box
-        document.activeElement.blur(); // remove focus from search box
-        searchVisible = false; // search not visible
-      }
-  }
 
   // Allow ESC (27) to close search box
   if (event.keyCode == 27) {
@@ -94,31 +70,6 @@ function fetchJSONFile(path, callback) {
   httpRequest.open('GET', path);
   httpRequest.send();
 }
-
-
-// ==========================================
-// load our search index, only executed once
-// on first call of search box (CMD-/)
-//
-function loadSearch() {
-  fetchJSONFile('/index.json', function(data){
-
-    var options = { // fuse.js options; check fuse.js website for details
-      shouldSort: true,
-      location: 0,
-      distance: 100,
-      threshold: 0.4,
-      minMatchCharLength: 2,
-      keys: [
-        'title',
-        'permalink',
-        'summary'
-        ]
-    };
-    fuse = new Fuse(data, options); // build the index from the json file
-  });
-}
-
 
 // ==========================================
 // using the index we loaded on CMD-/, run

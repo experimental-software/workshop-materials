@@ -1,0 +1,33 @@
+<div id="fastSearch">
+   <input id="searchInput" tabindex="0">
+   <ul id="searchResults">
+   </ul>
+</div>
+
+<script src="{{ "/search/fuse.min.js" | relURL }}" ></script>
+<script src="{{ "/search/fastsearch.js" | relURL }}" ></script>
+
+<script>
+
+function loadSearch() {
+  fetchJSONFile("{{ "index.json" | relURL }}", function(data){
+
+    var options = { // fuse.js options; check fuse.js website for details
+      shouldSort: true,
+      location: 0,
+      distance: 100,
+      threshold: 0.4,
+      minMatchCharLength: 2,
+      keys: [
+        'title',
+        'permalink',
+        'summary'
+        ]
+    };
+    fuse = new Fuse(data, options); // build the index from the json file
+  });
+}
+
+loadSearch();
+
+</script>
