@@ -1,6 +1,6 @@
 # Workshop Materials
 
-This repository contains a [Hugo](https://gohugo.io) theme for supporting materials for IT training workshops.
+The goal of the Workshop Materials project is to provide a simplistic tool for the creation of presentations and tutorials which can be used as supporting material workshops of IT topics.
 
 ## Dependencies
 
