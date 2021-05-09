@@ -4,7 +4,7 @@ The goal of the Workshop Materials project is to provide a simplistic tool for t
 
 ## Dependencies
 
-The following tools need to be installed start using this theme:
+The following tools need to be installed before you can start using the tool:
 
 - [Hugo](https://gohugo.io/getting-started/quick-start/)
 - [git](https://git-scm.com/downloads)
