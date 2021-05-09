@@ -26,27 +26,33 @@ Along with the Markdown syntax, you can use the following custom [Hugo shortcode
 
 **Info callout box**
 
-```md
-\{\{\< info \>\}\}
-Lorem [impsum](https://example.com) dolor sit amet.
-\{\{\< \/info \>\}\}
+{% raw %}
 ```
+{{< info >}}
+Lorem [impsum](https://example.com) dolor sit amet.
+{{< /info >}}
+```
+{% endraw %}
 
 **Tip callout box**
 
+{% raw %}
 ```
-\{\{\< tip \>\}\}
+{{< tip >}}
 Lorem [impsum](https://example.com) dolor sit amet.
 {{< /tip >}}
 ```
+{% endraw %}
 
 **Warning callout box**
 
+{% raw %}
 ```
 {{< warning >}}
 Lorem [impsum](https://example.com) dolor sit amet.
 {{< /warning >}}
 ```
+{% endraw %}
 
 # Presentations
 
