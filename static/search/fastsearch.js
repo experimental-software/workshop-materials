@@ -78,6 +78,8 @@ function fetchJSONFile(path, callback) {
 //
 function executeSearch(term) {
 
+  $('#exampleModal').modal();
+
   let results = fuse.search(term); // the actual query being run using fuse.js
   let searchitems = ''; // our results bucket
 
