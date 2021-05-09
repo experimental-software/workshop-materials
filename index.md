@@ -1,6 +1,10 @@
-
-
 # Getting started
+
+## Dependencies
+
+TBD
+
+## Create new project
 
 TBD
 
@@ -22,17 +26,15 @@ Along with the Markdown syntax, you can use the following custom [Hugo shortcode
 
 **Info callout box**
 
-```
-```
+```md
 {{< info >}}
 Lorem [impsum](https://example.com) dolor sit amet.
 {{< /info >}}
 ```
-```
 
 **Tip callout box**
 
-```
+```text
 {{< tip >}}
 Lorem [impsum](https://example.com) dolor sit amet.
 {{< /tip >}}
@@ -40,7 +42,7 @@ Lorem [impsum](https://example.com) dolor sit amet.
 
 **Warning callout box**
 
-```
+```dart
 {{< warning >}}
 Lorem [impsum](https://example.com) dolor sit amet.
 {{< /warning >}}
