@@ -25,7 +25,7 @@ git add .
 git commit -m "Initial commit"
 ```
 
-For further instructions on how to use the template, please refer to its [README](https://github.com/experimental-software/workshop-materials-template/blob/master/README.md) file.
+For further instructions on how to use the template, please refer to the [project web site](https://experimental-software.github.io/workshop-materials).
 
 
 ## Credits
