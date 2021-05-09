@@ -36,13 +36,13 @@ Lorem [impsum](https://example.com) dolor sit amet.
 
 **Tip callout box**
 
+{% highlight md%}
 {% raw %}
-```
-{{< tip >}}
-Lorem [impsum](https://example.com) dolor sit amet.
-{{< /tip >}}
-```
+    {{< tip >}}
+    Lorem [impsum](https://example.com) dolor sit amet.
+    {{< /tip >}}
 {% endraw %}
+{% endhighlight %}
 
 **Warning callout box**
 
