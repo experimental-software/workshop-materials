@@ -14,7 +14,7 @@ loadSearch();
 //
 document.addEventListener('keydown', function(event) {
 
-  console.log(event);
+  console.log(event.keyCode);
 
   // CMD-/ to show / hide Search
   if (event.metaKey && event.which === 191) {
@@ -132,6 +132,7 @@ function executeSearch(term) {
 
   if (results.length === 0) { // no results based on what was typed into the input box
     resultsAvailable = false;
+    searchVisible = true;
     searchitems = '';
   } else { // build our html
     var listedTitles = [];
