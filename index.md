@@ -1,8 +1,12 @@
-## Content authoring
 
-### Tutorials
 
-#### Add a new tutorial
+# Getting started
+
+TBD
+
+# Tutorials
+
+## Add a new tutorial
 
 Run the following command to add a new presentation in Hugo's `content` directory:
 
@@ -10,20 +14,20 @@ Run the following command to add a new presentation in Hugo's `content` director
 hugo new --kind tutorial subject-two/my-tutorial
 ```
 
-#### Content syntax
+## Content syntax
 
 The presentations can be created using [Markdown](https://daringfireball.net/projects/markdown/) syntax.
-
-#### Content syntax extensions
 
 Along with the Markdown syntax, you can use the following custom [Hugo shortcodes](https://gohugo.io/content-management/shortcodes):
 
 **Info callout box**
 
 ```
+```
 {{< info >}}
 Lorem [impsum](https://example.com) dolor sit amet.
 {{< /info >}}
+```
 ```
 
 **Tip callout box**
@@ -42,13 +46,13 @@ Lorem [impsum](https://example.com) dolor sit amet.
 {{< /warning >}}
 ```
 
-### Presentations
+# Presentations
 
-#### Presentation syntax
+## Presentation syntax
 
 The presentations can be created using plain HTML with the [reveal.js](https://revealjs.com/) syntax.
 
-#### Add a new presentation
+## Add a new presentation
 
 Run the following command to add a new presentation in Hugo's `content` directory:
 
@@ -56,6 +60,6 @@ Run the following command to add a new presentation in Hugo's `content` director
 hugo new --kind presentation subject-two/my-presentation
 ```
 
-## Imprint
+# Imprint
 
 See http://notes.experimental-software.com/Impressum.html
