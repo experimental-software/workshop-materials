@@ -1,8 +1,35 @@
-<div id="fastSearch">
-   <input id="searchInput" tabindex="0">
-   <ul id="searchResults">
-   </ul>
+
+<button id="openSearchButton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Search
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+
+          <div class="container d-flex justify-content-center">
+              <div class="card mt-5 p-4">
+                  <div class="input-group mb-3"> <input type="text" class="form-control">
+                      <div class="input-group-append"><button class="btn btn-primary"><i class="fas fa-search"></i></button></div>
+                  </div> <span class="text mb-4">88 branding projects</span>
+
+
+                  <div id="fastSearch">
+                     <input id="searchInput" tabindex="0">
+                     <ul id="searchResults">
+                     </ul>
+                  </div>
+                  
+              </div>
+          </div>
+
+    </div>
+  </div>
 </div>
+
+
 
 <script src="{{ "/search/fuse.min.js" | relURL }}" ></script>
 <script src="{{ "/search/fastsearch.js" | relURL }}" ></script>

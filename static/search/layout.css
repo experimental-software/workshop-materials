@@ -1,3 +1,11 @@
+
+#openSearchButton {
+
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+
 #fastSearch {
   /* visibility: hidden;
   position: absolute; */
@@ -33,3 +41,7 @@
 #searchResults { visibility: inherit; display: inline-block; width: 320px; }
 #searchResults a { text-decoration: none !important; padding: 10px; display: inline-block; }
 #searchResults a:hover, a:focus { outline: 0; background-color: #666; color: #fff; }
+
+.modal-content {
+   text-decoration: none !important;
+}
