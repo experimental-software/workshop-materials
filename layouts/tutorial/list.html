@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    
+
     <link href="{{ "tutorial/layout.css" | relURL }}" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    
+
   <div id="title" style="background: white; opacity: 1;">
     <a href="{{ .Parent.RelPermalink }}"><i class="fas fa-times"></i></a>
     <span>{{ .Title }}</span>
@@ -36,8 +36,8 @@
                   <div class="card-body">
                       {{ .Content }}
                   </div>
-                </div>              
-              </div>              
+                </div>
+              </div>
             </div>
         {{ end }}
         <div class="sectionStepper">
@@ -55,7 +55,7 @@
     </div>
 
   </div>
-  
+
   <div id="toc">
     {{ $sectionId := 0 }}
     {{ range sort .Pages "File.Path" }}
@@ -70,7 +70,7 @@
         </div>
     {{ end }}
   </div>
-  
+
   <div id="contact">
     {{ if .Site.Params.FeedbackLink }}
       <a href="{{ .Site.Params.FeedbackLink }}" target="_blank">Feedback</a>
@@ -79,7 +79,7 @@
 
   <script src="{{ "tutorial/toc.js" | relURL }}" type="application/javascript"></script>
 
-  
+
 </body>
 
 </html>
