@@ -1,0 +1,5 @@
+{{ $termKey := default "utf-16" (.Get 0) }}
+
+{{ with .Site.GetPage "page" ( printf  "glossary/%s/index.md" $termKey )  }}
+<a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a>
+{{ end }}
