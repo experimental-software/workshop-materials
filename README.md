@@ -20,7 +20,8 @@ git clone --recurse \
   $PROJECT_NAME
   
 cd $PROJECT_NAME
-git checkout --orphan master
+DEFAULT_BRANCH=main
+git checkout --orphan $DEFAULT_BRANCH
 git add .
 git commit -m "Initial commit"
 ```
