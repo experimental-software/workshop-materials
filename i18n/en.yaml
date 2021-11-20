@@ -6,7 +6,3 @@
   translation: "Done!"
 - id: tutorial.support
   translation: "Support"
-- id: callout.tip
-  translation: "Tip"
-- id: callout.warning
-  translation: "Caution"
