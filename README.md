@@ -59,6 +59,7 @@ git push
 - The layout of the tutorial pages is inspired by [Google Codelabs](https://github.com/googlecodelabs/tools).
 - The presentations are based on [RevealJS](https://revealjs.com/) which is licensed under the [MIT license](https://github.com/hakimel/reveal.js/blob/master/LICENSE).
 - At various places of the website [Font Awesome](https://fontawesome.com/) icons are used.
+- For zooming in images in tutorials, the [medium-zoom](https://github.com/francoischalifour/medium-zoom) library from François Chalifour is being used. See [license](./3rd-party/LICENSE_MEDIUM_ZOOM).
 
 ## License
 

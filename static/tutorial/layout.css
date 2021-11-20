@@ -4,7 +4,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 
   #tocPlaceholder {
     display: none;
@@ -20,7 +20,6 @@
 #toc {
  height: 100%;
  position: fixed;
- z-index: 1;
  top: 100px;
  left: 0;
  /* background-color: #111;  */
