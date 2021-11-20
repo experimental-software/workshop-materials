@@ -28,6 +28,27 @@ git commit -m "Initial commit"
 
 For further instructions on how to use the template, please refer to the [project web site](https://experimental-software.github.io/workshop-materials).
 
+## Development
+
+### Internationalization
+
+The keys for the localizations can be found here: [`i18n/`](./i18n)
+
+In the templates the localizations can be included like this:
+
+```
+{{ i18n "tutorial.back" }}
+```
+
+## Maintenance
+
+### Include changes
+
+After changes has been made in this repository, do the following steps to apply those changes in a workshop repository:
+
+```bash
+
+```
 
 ## Credits
 

@@ -71,9 +71,14 @@
     {{ end }}
   </div>
 
-  <div id="contact">
+  <div id="feedback">
     {{ if .Site.Params.FeedbackLink }}
-      <a href="{{ .Site.Params.FeedbackLink }}" target="_blank">Feedback</a>
+      <a class="btn btn-info" href="{{ .Site.Params.FeedbackLink }}" target="_blank">
+        {{ if .Site.Params.FeedbackIcon }}
+          <i class="{{ .Site.Params.FeedbackIcon }}"></i>
+        {{ end }}
+        {{ i18n "tutorial.support" }}
+      </a>
     {{ end }}
   </div>
 

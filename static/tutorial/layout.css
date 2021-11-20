@@ -130,12 +130,16 @@
   height: auto;
 }
 
-#contact {
+#feedback {
   position: fixed;
-  top: 0px;
-  right: 7px;
+  top: 8px;
+  right: 8px;
   z-index: 5;
   padding: 8px;
+}
+
+#feedback i {
+  padding-right: 4px;
 }
 
 .anchorContainer {
