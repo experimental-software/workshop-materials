@@ -47,7 +47,10 @@ In the templates the localizations can be included like this:
 After changes has been made in this repository, do the following steps to apply those changes in a workshop repository:
 
 ```bash
-
+git submodule update --remote
+git add .
+git commit -m "Update theme"
+git push 
 ```
 
 ## Credits
