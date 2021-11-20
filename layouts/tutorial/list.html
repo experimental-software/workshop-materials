@@ -59,15 +59,23 @@
   <div id="toc">
     {{ $sectionId := 0 }}
     {{ range sort .Pages "File.Path" }}
-        {{ $sectionId = add $sectionId 1 }}
-        <div class="sectionLink card" data-section-id="{{ $sectionId }}">
-          <a href="#section-{{ $sectionId }}" onclick="setActiveSection({{ $sectionId }})">
-            <div class="card-body">
-              <span class="dot">{{ $sectionId }}</span>
-              {{ .Title }}
+      {{ $sectionId = add $sectionId 1 }}
+      <div class="sectionLink card" data-section-id="{{ $sectionId }}">
+        <a href="#section-{{ $sectionId }}" onclick="setActiveSection({{ $sectionId }})">
+          <div class="card-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-2">
+                  <span class="dot">{{ $sectionId }}</span>
+                </div>
+                <div class="col-md-10">
+                  {{ .Title }}
+                </div>
+               </div>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
+      </div>
     {{ end }}
   </div>
 
