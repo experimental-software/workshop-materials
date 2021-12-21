@@ -26,7 +26,6 @@
       <div id="content">
         {{ $sectionId := 0 }}
         {{ range sort .Pages "File.Path" }}
-            {{ $sectionId = add $sectionId 1 }}
             <div class="section" data-section-id="{{ $sectionId }}">
               <div class="anchorContainer">
                 <a id="section-{{ $sectionId }}">&nbsp;</a>
@@ -40,6 +39,7 @@
                 </div>
               </div>
             </div>
+            {{ $sectionId = add $sectionId 1 }}
         {{ end }}
         <div class="sectionStepper">
           <div class="d-flex justify-content-between">
@@ -60,23 +60,29 @@
   <div id="toc">
     {{ $sectionId := 0 }}
     {{ range sort .Pages "File.Path" }}
-      {{ $sectionId = add $sectionId 1 }}
       <div class="sectionLink card" data-section-id="{{ $sectionId }}">
         <a href="#section-{{ $sectionId }}" onclick="setActiveSection({{ $sectionId }})">
           <div class="card-body">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-2">
-                  <span class="dot">{{ $sectionId }}</span>
-                </div>
-                <div class="col-md-10">
-                  {{ .Title }}
-                </div>
+                {{ if eq $sectionId 0 }}
+                  <div class="col-md-10">
+                    {{ .Title }}
+                  </div>
+                {{ else }}
+                  <div class="col-md-2">
+                    <span class="dot">{{ $sectionId }}</span>
+                  </div>
+                  <div class="col-md-10">
+                    {{ .Title }}
+                  </div>
+                {{ end }}
                </div>
             </div>
           </div>
         </a>
       </div>
+      {{ $sectionId = add $sectionId 1 }}
     {{ end }}
   </div>
 
