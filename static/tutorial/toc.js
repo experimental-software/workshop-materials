@@ -1,6 +1,6 @@
 
 function setActiveSection(sectionCount) {
-
+  console.log("set action section: " + sectionCount);
   currentSection = sectionCount;
   
   var sectionLinks = document.querySelectorAll("#toc div.sectionLink");
@@ -63,6 +63,27 @@ function goToNextSection() {
   }
 }
 
-var currentSection = 0;
+// https://stackoverflow.com/a/14794066/2339010
+function isInt(value) {
+  if (isNaN(value)) {
+    return false;
+  }
+  var x = parseFloat(value);
+  return (x | 0) === x;
+}
 
-setActiveSection(currentSection);
+function init() {
+  var fullUrl = window.location.href;
+  var splitUrl = fullUrl.split("#section-");
+  if (splitUrl.length === 2 && isInt(splitUrl[1])) {
+    currentSection = parseFloat(splitUrl[1]);
+    setActiveSection(currentSection);
+  } else {
+    if (currentSection === null) {
+      setActiveSection(0);
+    }
+  }
+}
+
+var currentSection = null;
+init();
