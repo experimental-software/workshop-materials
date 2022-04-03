@@ -29,9 +29,11 @@ git add .
 git commit -m "Initial commit"
 ```
 
-For further instructions on how to use the template, please refer to the [project web site](https://experimental-software.github.io/workshop-materials).
+Afterwards, refer to the README file of the new project, for hints what should be done next.
 
 ## Development
+
+This sections contains hints for working on the Workshop Materials theme.
 
 ### Internationalization
 
@@ -44,6 +46,8 @@ In the templates the localizations can be included like this:
 ```
 
 ## Maintenance
+
+This sections contains hints for maintainers of this repository.
 
 ### Include changes
 
