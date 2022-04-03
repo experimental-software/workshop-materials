@@ -21,6 +21,7 @@ git clone --recurse \
   
 cd $PROJECT_NAME
 git submodule update --remote
+git remote remove origin
 
 DEFAULT_BRANCH=main
 git checkout --orphan $DEFAULT_BRANCH
