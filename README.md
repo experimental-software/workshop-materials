@@ -47,7 +47,7 @@ In the templates the localizations can be included like this:
 
 ## Maintenance
 
-This sections contains hints for maintainers of this repository.
+This section contains hints for maintainers of this repository.
 
 ### Include changes
 
