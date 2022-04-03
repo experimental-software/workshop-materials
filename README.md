@@ -1,6 +1,6 @@
 # Workshop Materials
 
-The goal of the Workshop Materials project is to provide a simplistic tool for the creation of presentations and tutorials.
+The Workshop Materials provides a simplistic tool for the creation of a website hosting presentations and tutorials.
 
 ## Dependencies
 
