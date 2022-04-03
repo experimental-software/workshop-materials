@@ -33,7 +33,7 @@ Afterwards, refer to the README file of the new project, for hints what should b
 
 ## Development
 
-This sections contains hints for working on the Workshop Materials theme.
+This section contains hints for working on the Workshop Materials theme.
 
 ### Internationalization
 
