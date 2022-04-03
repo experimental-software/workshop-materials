@@ -1,6 +1,6 @@
 # Workshop Materials
 
-The Workshop Materials provides a simplistic tool for the creation of a website hosting presentations and tutorials.
+The Workshop Materials project provides a simplistic tool for the creation of a website hosting presentations and tutorials.
 
 ## Dependencies
 
