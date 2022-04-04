@@ -49,9 +49,23 @@ In the templates the localizations can be included like this:
 {{ i18n "tutorial.back" }}
 ```
 
-## Maintenance
+## Workshop Maintenance
 
-This section contains hints for maintainers of this repository.
+This section contains hints for maintainers of workshop repositories.
+
+### Improve upstream
+
+Usually, while working on the contents of a workshop, it turns out that the theme needs some improvements. Follow those steps in a workshop repository, to get started with improving the theme.
+
+```bash
+{
+cd themes/workshop-materials
+git remote remove origin
+git remote add origin git@github.com:experimental-software/workshop-materials.git
+git fetch origin
+git checkout origin/master
+}
+```
 
 ### Include changes
 
