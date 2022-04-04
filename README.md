@@ -67,7 +67,7 @@ git checkout origin/master
 }
 ```
 
-### Include changes
+### Update theme
 
 After changes has been made in this repository, do the following steps to apply those changes in a workshop repository:
 
