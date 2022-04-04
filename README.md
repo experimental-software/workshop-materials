@@ -49,38 +49,6 @@ In the templates the localizations can be included like this:
 {{ i18n "tutorial.back" }}
 ```
 
-## Workshop Maintenance
-
-This section contains hints for maintainers of workshop repositories.
-
-### Improve theme
-
-Usually, while working on the contents of a workshop, it turns out that the theme needs some improvements. Follow those steps in a workshop repository, to get started with improving the theme.
-
-```bash
-{
-cd themes/workshop-materials
-git remote remove origin
-git remote add origin git@github.com:experimental-software/workshop-materials.git
-git fetch origin
-git checkout origin/master
-}
-```
-
-### Update theme
-
-After changes has been made in this repository, do the following steps to apply those changes in a workshop repository:
-
-```bash
-{
-git submodule update --remote
-git add .
-git commit -m "Update theme"
-}
-
-git push 
-```
-
 ## Credits
 
 - The layout of the start page and the subject list pages is applied from a Bootstrap template by [Xiaoying Riley](https://themes.3rdwavemedia.com/) which is licensed under Creative Commons Attribution 3.0 License.
