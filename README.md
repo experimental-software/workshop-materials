@@ -15,18 +15,22 @@ To create new workshop materials, you can use the [Workshop Materials template](
 
 ```
 PROJECT_NAME=your-project-here
+{
 git clone --recurse \
-  git@github.com:experimental-software/workshop-materials-template.git \
+  https://github.com/experimental-software/workshop-materials-template.git \
   $PROJECT_NAME
   
 cd $PROJECT_NAME
 git submodule update --remote
 git remote remove origin
+}
 
 DEFAULT_BRANCH=main
+{
 git checkout --orphan $DEFAULT_BRANCH
 git add .
 git commit -m "Initial commit"
+}
 ```
 
 Afterwards, refer to the README file of the new project, for hints what should be done next.
@@ -43,24 +47,6 @@ In the templates the localizations can be included like this:
 
 ```
 {{ i18n "tutorial.back" }}
-```
-
-## Maintenance
-
-This section contains hints for maintainers of this repository.
-
-### Include changes
-
-After changes has been made in this repository, do the following steps to apply those changes in a workshop repository:
-
-```bash
-{
-git submodule update --remote
-git add .
-git commit -m "Update theme"
-}
-
-git push 
 ```
 
 ## Credits
