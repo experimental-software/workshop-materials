@@ -53,7 +53,7 @@ In the templates the localizations can be included like this:
 
 This section contains hints for maintainers of workshop repositories.
 
-### Improve upstream
+### Improve theme
 
 Usually, while working on the contents of a workshop, it turns out that the theme needs some improvements. Follow those steps in a workshop repository, to get started with improving the theme.
 
