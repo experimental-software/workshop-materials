@@ -119,11 +119,7 @@
   display: block;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  z-index: 100;
-}
+
 
 #feedback {
   position: fixed;
@@ -197,3 +193,11 @@ blockquote a{
   font-weight: bold;
   margin-top:1em;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  z-index: 100;
+  border: 6px solid #555;
+}
+
