@@ -54,3 +54,11 @@
 div.highlight pre {
   padding: 8px;
 }
+
+#content {
+    font-size: 18px ;
+}
+
+img {
+  border: 6px solid #555;
+}

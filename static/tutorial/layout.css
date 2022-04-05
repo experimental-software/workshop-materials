@@ -201,3 +201,6 @@ img {
   border: 6px solid #555;
 }
 
+#content .card-body {
+    font-size: 18px ;
+}
