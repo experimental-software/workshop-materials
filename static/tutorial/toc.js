@@ -1,6 +1,5 @@
 
 function setActiveSection(sectionCount) {
-  console.log("set action section: " + sectionCount);
   currentSection = sectionCount;
   
   var sectionLinks = document.querySelectorAll("#toc div.sectionLink");
