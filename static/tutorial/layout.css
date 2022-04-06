@@ -199,6 +199,7 @@ img {
   height: auto;
   z-index: 100;
   border: 6px solid #555;
+  margin-bottom: 50px;
 }
 
 #content .card-body {
