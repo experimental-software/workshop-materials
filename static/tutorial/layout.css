@@ -209,6 +209,13 @@ img {
     font-size: 18px ;
 }
 
+#content .card {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
 button, a#finish {
     padding-left: 40px !important;
     padding-right: 40px !important;
