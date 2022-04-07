@@ -15,7 +15,6 @@
   }
 }
 
-
 /* The sidebar menu */
 #toc {
  height: 100%;
@@ -213,4 +212,8 @@ img {
 button, a#finish {
     padding-left: 40px !important;
     padding-right: 40px !important;
+}
+
+body {
+  background: #E8E8E8 !important;
 }
