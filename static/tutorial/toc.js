@@ -45,6 +45,14 @@ function setActiveSection(sectionCount) {
     finishButton.style.display = "none";
     continueButton.style.display = "block";
   }
+  
+  var startButton = document.getElementById("start");
+  if (sectionCount == 0) {
+    startButton.style.display = "block";
+    continueButton.style.display = "none";
+  } else {
+    startButton.style.display = "none";
+  }
 }
 
 function goToPreviousSection() {

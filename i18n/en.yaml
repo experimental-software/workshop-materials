@@ -1,3 +1,5 @@
+- id: tutorial.start
+  translation: "Start"
 - id: tutorial.back
   translation: "Back"
 - id: tutorial.continue

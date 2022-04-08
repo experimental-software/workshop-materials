@@ -48,6 +48,7 @@
             </div>
             <div>
               <a id="finish" class="btn btn-success float-right" href="{{ .Parent.RelPermalink }}">{{ i18n "tutorial.done" }}</a>
+              <button id="start" type="button" class="btn btn-success float-right" onclick="goToNextSection()">{{ i18n "tutorial.start" }}</button>
               <button type="button" class="goToNextSection btn btn-primary float-right" onclick="goToNextSection()">{{ i18n "tutorial.continue" }}</button>
             </div>
           </div>
