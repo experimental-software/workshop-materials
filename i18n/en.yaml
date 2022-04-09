@@ -1,10 +1,12 @@
-- id: tutorial.start
-  translation: "Start"
+- id: listing.table.topic
+  translation: "Topic"
 - id: tutorial.back
   translation: "Back"
 - id: tutorial.continue
   translation: "Continue"
 - id: tutorial.done
   translation: "Done!"
+- id: tutorial.start
+  translation: "Start"  
 - id: tutorial.support
   translation: "Support"
