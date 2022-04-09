@@ -1,3 +1,5 @@
+- id: footer.imprint.link
+  translation: "Imprint"
 - id: listing.table.topic
   translation: "Topic"
 - id: tutorial.back

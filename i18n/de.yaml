@@ -1,3 +1,5 @@
+- id: footer.imprint.link
+  translation: "Impressum"
 - id: listing.table.topic
   translation: "Thema"
 - id: tutorial.back
