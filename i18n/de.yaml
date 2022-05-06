@@ -2,6 +2,8 @@
   translation: "Impressum"
 - id: listing.table.topic
   translation: "Thema"
+- id: listing.table.description
+  translation: "Beschreibung"
 - id: tutorial.back
   translation: "Zurück"
 - id: tutorial.continue
