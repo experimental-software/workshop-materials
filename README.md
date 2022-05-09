@@ -19,7 +19,7 @@ PROJECT_NAME=your-project-here
 git clone --recurse \
   https://github.com/experimental-software/workshop-materials-template.git \
   $PROJECT_NAME
-  
+
 cd $PROJECT_NAME
 git submodule update --remote
 git remote remove origin
@@ -56,6 +56,7 @@ In the templates the localizations can be included like this:
 - The presentations are based on [RevealJS](https://revealjs.com/) which is licensed under the [MIT license](https://github.com/hakimel/reveal.js/blob/master/LICENSE).
 - At various places of the website [Font Awesome](https://fontawesome.com/) icons are used.
 - For zooming in images in tutorials, the [medium-zoom](https://github.com/francoischalifour/medium-zoom) library from François Chalifour is being used. See [license](./3rd-party/LICENSE_MEDIUM_ZOOM).
+- The theme uses [Google Fonts](https://fonts.google.com/attribution), self-hosted with the help of [google-webfonts-helper](https://github.com/majodev/google-webfonts-helper/).
 
 ## License
 
