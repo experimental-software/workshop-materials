@@ -2,8 +2,6 @@
   translation: "Imprint"
 - id: listing.table.topic
   translation: "Topic"
-- id: listing.table.description
-  translation: "Description"
 - id: tutorial.back
   translation: "Back"
 - id: tutorial.continue

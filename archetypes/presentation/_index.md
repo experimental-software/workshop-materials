@@ -1,6 +1,5 @@
 ---
 title: Introduction
-description: 
 type: presentation_intro
 weight: 1
 ---
