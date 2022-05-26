@@ -26,7 +26,7 @@
     <div class="col">
       <div id="content">
         {{ $sectionId := 0 }}
-        {{ range sort .Pages "File.Path" }}
+        {{ range where (sort .Pages "File.Path") "Params.type" "ne" "presentation" }}
             <div class="section" data-section-id="{{ $sectionId }}">
               <div class="anchorContainer">
                 <a id="section-{{ $sectionId }}">&nbsp;</a>
@@ -61,7 +61,7 @@
 
   <div id="toc">
     {{ $sectionId := 0 }}
-    {{ range sort .Pages "File.Path" }}
+    {{ range where (sort .Pages "File.Path") "Params.type" "ne" "presentation" }}
       <div class="sectionLink card" data-section-id="{{ $sectionId }}">
         <a href="#section-{{ $sectionId }}" onclick="setActiveSection({{ $sectionId }})">
           <div class="card-body">
