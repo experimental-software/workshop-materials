@@ -1,6 +1,12 @@
 # Workshop Materials
 
-The Workshop Materials project provides a simplistic tool for the creation of a website hosting presentations and tutorials.
+The Workshop Materials project provides a simplistic tool for the creation of a website hosting presentations and tutorials for IT workshops.
+
+## Unique value proposition
+
+- The workshop materials are presented in a way which effectively supports the learners (hopefully).
+- The workshop materials can be edited with minimal overhead; the tutorials with Markdown and the presentations with HTML.
+- The website renderer is maximum easy and robust to install.
 
 ## Dependencies
 
