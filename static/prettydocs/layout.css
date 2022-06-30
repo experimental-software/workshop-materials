@@ -28,6 +28,7 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -50px;
+  background-color: #f1f1f1;
 }
 
 .page-wrapper:after {
@@ -428,7 +429,7 @@ select {
 /* ======= Doc Styling ======= */
 .doc-wrapper {
   padding: 5px 0;
-  background: #f9f9fb;
+  background: #f1f1f1;
 }
 
 .doc-body {
@@ -1275,7 +1276,7 @@ select {
 
 .cards-section {
   padding: 60px 0;
-  background: #f9f9fb;
+  background: #f1f1f1;
 }
 
 .cards-section .title {
