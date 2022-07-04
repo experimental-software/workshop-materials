@@ -26,9 +26,25 @@ html, body {
 
 .page-wrapper {
   min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -50px;
   background-color: #f1f1f1;
+}
+
+@media all and (min-width:500px) {
+  .page-wrapper {
+      min-height: 100%;
+      /* equal to footer height */
+      margin-bottom: -50px;
+      background-color: #f1f1f1;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 500px) {
+  .page-wrapper {
+      min-height: 100%;
+      /* equal to footer height */
+      margin-bottom: -75px;
+      background-color: #f1f1f1;
+    }
 }
 
 .page-wrapper:after {
@@ -37,9 +53,20 @@ html, body {
   height: 50px;
 }
 
-.footer {
-  height: 50px;
-  font-size: 14px;
+
+
+@media all and (min-width:500px) {
+  .footer {
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width:0px) and (max-width: 500px) {
+  .footer {
+    height: 75px;
+    font-size: 14px;
+  }
 }
 
 p {
