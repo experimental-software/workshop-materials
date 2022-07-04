@@ -91,7 +91,7 @@
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-  /* font-size: 15pt; */
+  font-size: 1.5em; 
 }
 
 #title a {
@@ -225,15 +225,16 @@ button, a#finish {
 }
 
 body {
-  background: #f1f1f1 !important;
-  
+  background: #f1f1f1 !important;  
 }
 
-@media all and (min-width:0px) and (max-width: 800px) {
+@media all and (min-width:0px) and (max-width: 1300px) {
   body {
     font-size: 2em !important;
   }
-  button, a#finish {
+
+  button,
+  a#finish {
     font-size: 0.7em !important;
   }
 }
