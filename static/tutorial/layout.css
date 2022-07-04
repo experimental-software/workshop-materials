@@ -224,13 +224,11 @@ body {
   background: #f1f1f1 !important;  
 }
 
-@media all and (min-width:0px) and (max-width: 1300px) {
+@media (min-resolution: 2dppx) {
   body {
     font-size: 2em !important;
   }
-
-  button,
-  a#finish {
-    font-size: 0.7em !important;
+  button, a#finish {
+    font-size: 1em !important;
   }
 }
