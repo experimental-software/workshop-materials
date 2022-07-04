@@ -4,7 +4,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
 
   #tocPlaceholder {
     display: none;
@@ -91,7 +91,7 @@
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 15pt;
+  /* font-size: 15pt; */
 }
 
 #title a {
@@ -117,8 +117,6 @@
 #content div.section.current {
   display: block;
 }
-
-
 
 #feedback {
   position: fixed;
@@ -159,7 +157,7 @@ div.callout p:nth-of-type(2)::before {
 }
 
 blockquote{
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
   margin:50px auto;
   font-family:Open Sans;
   font-style:italic;
@@ -174,7 +172,7 @@ blockquote::before{
   font-family:Arial;
   content: "\201C";
   color:#78C0A8;
-  font-size:4em;
+  /* font-size:4em; */
   position: absolute;
   left: 10px;
   top:-10px;
@@ -208,9 +206,9 @@ img {
   margin-bottom: 40px;
 }
 
-#content .card-body {
+/* #content .card-body {
     font-size: 18px ;
-}
+} */
 
 #content .card {
     padding-top: 20px;
@@ -228,4 +226,14 @@ button, a#finish {
 
 body {
   background: #f1f1f1 !important;
+  
+}
+
+@media all and (min-width:0px) and (max-width: 800px) {
+  body {
+    font-size: 2em !important;
+  }
+  button, a#finish {
+    font-size: 0.7em !important;
+  }
 }

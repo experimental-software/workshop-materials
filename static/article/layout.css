@@ -80,3 +80,9 @@ img {
 body {
   background: #f1f1f1 !important;
 }
+
+@media all and (min-width:0px) and (max-width: 800px) {
+  body {
+    font-size: 2em !important;
+  }
+}
