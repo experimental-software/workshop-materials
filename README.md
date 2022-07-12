@@ -1,6 +1,6 @@
 # Workshop Materials
 
-The Workshop Materials project provides a simplistic tool to create websites for IT workshops, incl. tutorials, articles, and presentations.
+The Workshop Materials project provides a simplistic tool for IT workshops websites, incl. tutorials, articles, and presentations.
 
 ## Unique value proposition
 
