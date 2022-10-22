@@ -4,7 +4,7 @@ The Workshop Materials project provides a simplistic tool for IT workshops websi
 
 ## Unique value proposition
 
-- The workshop materials effectively help the learners learn (hopefully).
+- The workshop materials helps to learn effectively.
 - The editing requires only a text editor with Markdown and HTML syntax highlighting.
 - The dependencies are maximum simple and robust to install.
 
