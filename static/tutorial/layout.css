@@ -18,7 +18,7 @@ html {
 }
 
 /* Mobile Phones */
-@media screen and (max-device-width: 689px) {
+@media screen and (max-device-width: 470px) {
   html {
     font-size: 44px;
   }
@@ -43,8 +43,19 @@ html {
   }
 }
 
+@media screen and (min-device-width: 471px) and (max-device-width: 699px) {
+  html {
+    font-size: 26px;
+  }
+
+  #title {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
 /* Tablets */
-@media screen and (min-device-width: 690px) and (max-device-width: 1023px) {
+@media screen and (min-device-width: 700px) and (max-device-width: 1023px) {
   html {
     font-size: 20px;
   }
