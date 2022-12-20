@@ -2,12 +2,6 @@
 
 The Workshop Materials project provides a simplistic tool for the creation of IT workshop websites with tutorials, articles, and presentations.
 
-## Unique value proposition
-
-- The resulting workshop materials help the attendees to learn effectively.
-- The editing requires only a text editor with Markdown and HTML syntax highlighting.
-- The dependencies are maximum simple and robust to install.
-
 ## Dependencies
 
 The following tools need to be installed before you can start using the tool:
