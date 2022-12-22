@@ -1,3 +1,71 @@
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Mobile Phones */
+@media screen and (max-device-width: 470px) and (orientation: portrait) {
+  html {
+    font-size: 20px;
+  }
+
+  .col,
+  .row>* {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  #content .card {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .card-body {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .callout>div {
+    padding: 25px !important;
+  }
+}
+
+@media screen and (max-device-width: 470px) and (orientation: landscape) {
+  html {
+    font-size: 12px;
+  }
+
+  #title {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+/* Tablets */
+@media screen and (min-device-width: 471px) and (max-device-width: 1023px) {
+  html {
+    font-size: 20px;
+  }
+
+  #title {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+/* Desktops */
+@media screen and (min-device-width: 1024px) {
+  #content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 #title {
   position: fixed;
@@ -20,7 +88,6 @@
 
 /* Style page content */
 #content {
-  max-width: 800px;
   margin-top: 130px;
   margin-left: auto;
   margin-right: auto;
