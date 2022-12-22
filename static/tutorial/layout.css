@@ -18,7 +18,7 @@ html {
 }
 
 /* Mobile Phones */
-@media screen and (max-device-width: 470px) {
+@media screen and (max-device-width: 470px) and (orientation: portrait) {
   html {
     font-size: 44px;
   }
@@ -43,9 +43,9 @@ html {
   }
 }
 
-@media screen and (min-device-width: 471px) and (max-device-width: 699px) {
+@media screen and (max-device-width: 470px) and (orientation: landscape) {
   html {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   #title {
@@ -55,9 +55,14 @@ html {
 }
 
 /* Tablets */
-@media screen and (min-device-width: 700px) and (max-device-width: 1023px) {
+@media screen and (min-device-width: 471px) and (max-device-width: 1023px) {
   html {
     font-size: 20px;
+  }
+
+  #title {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 }
 
