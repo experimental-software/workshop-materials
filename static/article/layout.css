@@ -4,6 +4,16 @@
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  #tocPlaceholder {
+    display: none;
+  }
+
+  #toc {
+    display: none;
+  }
+}
+
 html {
   font-size: 16px;
 }
@@ -11,7 +21,7 @@ html {
 /* Mobile Phones */
 @media screen and (max-device-width: 470px) and (orientation: portrait) {
   html {
-    font-size: 20px;
+    font-size: 44px;
   }
 
   .col,
@@ -37,7 +47,7 @@ html {
 
 @media screen and (max-device-width: 470px) and (orientation: landscape) {
   html {
-    font-size: 12px;
+    font-size: 24px;
   }
 
   #title {
@@ -145,11 +155,4 @@ img {
 
 body {
   background: #f1f1f1 !important;
-}
-
-
-@media all and (min-width:0px) and (max-width: 1300px) {
-  body {
-    font-size: 2em !important;
-  }
 }
