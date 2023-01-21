@@ -58,6 +58,10 @@ In the templates the localizations can be included like this:
 - For zooming in images in tutorials, the [medium-zoom](https://github.com/francoischalifour/medium-zoom) library from François Chalifour is being used. See [license](./3rd-party/LICENSE_MEDIUM_ZOOM).
 - The theme uses [Google Fonts](https://fonts.google.com/attribution), self-hosted with the help of [google-webfonts-helper](https://github.com/majodev/google-webfonts-helper/).
 
+## Alternative projects
+
+- https://github.com/google/comprehensive-rust
+
 ## License
 
 [MIT](./LICENSE)
